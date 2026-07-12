@@ -334,6 +334,7 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .info-content .name {
@@ -585,6 +586,10 @@ main {
 .testimonials-item {
   min-width: 100%;
   scroll-snap-align: center;
+}
+
+.testimonials-item .content-card {
+  padding-top: 15px;
 }
 
 .testimonials-avatar-box {
@@ -1443,6 +1448,10 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding-top: 25px;
   }
 
+  .testimonials-item .content-card {
+    padding-top: 30px;
+  }
+
   .testimonials-avatar-box {
     transform: translate(30px, -30px);
     border-radius: 20px;
@@ -1452,7 +1461,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .testimonials-item-title {
     margin-bottom: 10px;
-    margin-left: 95px;
+    margin-left: 0;
   }
 
   .testimonials-text {
